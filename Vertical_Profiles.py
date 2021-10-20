@@ -122,7 +122,7 @@ for i in reversed(range(0,11)):
         axs[0].plot(cnt.QNIFA[:,i]-exp1.QNIFA[:,i], cnt.interp_level, color='blue', lw=2)
         axs[1].plot(cnt.QNWFA[:,i]-exp1.QNWFA[:,i], cnt.interp_level, color='blue', lw=2)
         
-    elif (i<10 and i!=9):
+    else:
         axs[0].plot(cnt.QNIFA[:,i]-exp1.QNIFA[:,i], cnt.interp_level, color='red', lw=1)
         axs[1].plot(cnt.QNWFA[:,i]-exp1.QNWFA[:,i], cnt.interp_level, color='red', lw=1)
         
